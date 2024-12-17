@@ -276,6 +276,7 @@ export function runRESTRequest$(
               status: res.statusCode,
               body: getTestableBody(res),
               headers: res.headers,
+              duration: res.meta.responseDuration,
             }
           )
 
